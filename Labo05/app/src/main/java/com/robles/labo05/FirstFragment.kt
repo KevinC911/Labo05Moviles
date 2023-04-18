@@ -1,0 +1,56 @@
+package com.robles.labo05
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.LinearLayout
+import androidx.navigation.findNavController
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+
+/**
+ * A simple [Fragment] subclass.
+ * Use the [FirstFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ */
+class  FirstFragment : Fragment() {
+    private lateinit var StarWars: LinearLayout
+    private lateinit var HarryPotter: LinearLayout
+    private lateinit var Button: FloatingActionButton
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_first, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        bind()
+        StarWars.setOnClickListener {
+            it.findNavController().navigate(R.id.action_firstFragment_to_secondFragment)
+        }
+        HarryPotter.setOnClickListener{
+            it.findNavController().navigate(R.id.action_firstFragment_to_fourthFragment2)
+        }
+        Button.setOnClickListener{
+            it.findNavController().navigate(R.id.action_firstFragment_to_thirdFragment)
+        }
+    }
+
+    private fun bind() {
+        StarWars = view?.findViewById(R.id.star_wars) as LinearLayout
+        HarryPotter = view?.findViewById(R.id.harry_potter) as LinearLayout
+        Button = view?.findViewById(R.id.floating_action_button) as FloatingActionButton
+    }
+
+
+}
