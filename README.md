@@ -1,7 +1,6 @@
 # Labo05Moviles
 Pregunta 1
-R/ Permite un proceso de navegacion mas sencilla dentro de la aplicacion, el cual facilita ser escalable y administrarse mejor incluso habilitando el uso del boton de atras de android
+R/ En uno en el cual se paran los datos y la logica de las vistas para que de ese modo se tenga una mejor organizacion y escalabilidad de la aplicacion
 Pregunta 2
-R/Navigation graph, NavHost y NavController
-Pregunta 3
-R/ Permite administrar de una forma grafica y sencilla la navegacion entre los fragment
+R/ Es donde la logica se expone a las vistas y donde se almacena en una cache los datos de la aplicacion los cuales sobreviven al ciclo de vida de las actividades
+

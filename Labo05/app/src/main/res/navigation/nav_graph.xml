@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.robles.labo05.FirstFragment"
+        android:name="com.robles.labo05.ui.movies.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -22,17 +22,17 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.robles.labo05.SecondFragment"
+        android:name="com.robles.labo05.ui.movies.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
     <fragment
         android:id="@+id/thirdFragment"
-        android:name="com.robles.labo05.thirdFragment"
+        android:name="com.robles.labo05.ui.movies.thirdFragment"
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" />
     <fragment
         android:id="@+id/fourthFragment2"
-        android:name="com.robles.labo05.FourthFragment"
+        android:name="com.robles.labo05.ui.movies.FourthFragment"
         android:label="fragment_fourth"
         tools:layout="@layout/fragment_fourth" />
 </navigation>
