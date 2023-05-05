@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
@@ -20,7 +21,7 @@ class thirdFragment : Fragment() {
     private lateinit var categoryInput: EditText
     private lateinit var descriptionInput: EditText
     private lateinit var qualificationInput: EditText
-    private lateinit var buttonAddMovie: EditText
+    private lateinit var buttonAddMovie: Button
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

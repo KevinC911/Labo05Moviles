@@ -50,7 +50,7 @@ class  FirstFragment : Fragment() {
     private fun bind() {
         StarWars = view?.findViewById(R.id.star_wars) as LinearLayout
         HarryPotter = view?.findViewById(R.id.harry_potter) as LinearLayout
-        Button = view?.findViewById(R.id.floating_action_button) as FloatingActionButton
+        Button = view?.findViewById(R.id.add_a_movie) as FloatingActionButton
     }
 
 
